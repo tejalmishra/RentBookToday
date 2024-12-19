@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rent Book Today</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+
+       
+
+    </style>
+</head>
+
+<body class="body
+">
+    
+    <nav class="navbar h-nav">
+
+        <div class="leftnav">
+            <div class="logo"><img src="img/myLogo.png" alt="logo"></div>
+            <h2>Rent Book Today</h2>
+        </div>
+        <input type="checkbox" name="" id="responsive_menu">
+        <label for="responsive_menu"></label>
+       
+            <ul class="rightul  rightnav">
+                <li class="active"><a class="active" href="index.html">Home</a></li>
+                <li class="Overview"><a href="#Overviw-Section">Overview</a></li>
+                <li class="Authors"><a href="#Authors-section">Authors</a></li>
+                <li class="Price"><a href="#Price-section">Price</a></li>
+                <li class="Contacts"><a href="#Contacts-section">Contacts</a></li>
+                <li class="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li class="profile" id="show-login"><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass icon"></i></a><input class="input" type="text" placeholder="Search" id="mySearch"></li>
+                
+                
+            </ul>
+    </nav>
+    <script>
+         const icon = document.querySelector('.icon');
+        const search = document.querySelector('.search');
+        icon.onclick = function(){
+            search.classList.toggle('active')
+        }
+
+    </script>
+       
+
+
+
+    <header>
+        <div class="container swiper mySwiper">
+            <div class="content swiper-wrapper">
+                <div class="slides swiper-slide">
+                    <img src="img/slide9.jpg" alt="img">
+                    <div class="img_overlay">
+                        <p>Sale 20% Off</p>
+                        <h3>On Every Books</h3>
+                        <h3>Limited Offer</h3>
+                        <a href="#">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="img/slide10.jpg" alt="img">
+                    <div class="img_overlay">
+                        <p>Sale 20% Off</p>
+                        <h3>On Every Books</h3>
+                        <h3>Limited Offer</h3>
+                        <a href="#">Shop Now</a>
+                    </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="img/slide12.jpg" alt="img">
+                    <div class="img_overlay">
+                        <p>Sale 20% Off</p>
+                        <h3>On Every Books</h3>
+                        <h3>Limited Offer</h3>
+                        <a href="#">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next btn"></div>
+            <div class="swiper-button-prev btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+
+<!-----------------------------------------Second NavBar------------------------------------------------>
+
+<nav class="secondnav h-nav-resp">
+    <div class="left-nav">
+       <!--<div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+            <i class="fas fa-bars"></i>
+        </label>--> 
+        <ul class="secondul v-class-resp">
+
+
+            <li><a href="#New-Arrivals">New Arrivals</a>
+                
+            </li>
+
+            <li><a href="#Deals-Section">Deals</a>
+
+           
+            </li>
+            <li><a href="#Best-Sellers">BestSellers</a>
+                
+            </li>
+            <li><a href="E-Books">E-Books<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu2">
+                    <ul>
+                        <li><a href="#">Fiction & Literature</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Nonfiction</a></li>
+                        <li><a href="#">Mystery & Suspense
+                        </a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Science Fiction & Fantasy</a></li>
+                        <li><a href="#">Biography & Memoir
+                        </a></li>
+                    </ul>    
+                </div>
+            </li>
+            <li><a href="Upcoming">Upcoming<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu2">
+                    <ul>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Pre-book</a></li>
+                        <li><a href="#">Release</a></li>
+                    </ul>    
+                </div>
+            </li>
+            <li><a href="Education">Education<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu3 .Subsmenu">
+                    <ul>
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Medical</a></li>
+                        <li><a href="#">Mathematics
+                        </a></li>
+                        <li><a href="#">Physical education</a></li>
+                        <li><a href="#">Biology</a></li>
+                        <li><a href="#">Political science</a></li>
+                        <li><a href="#">Pedagogy</a></li>
+                        <li><a href="#">Doctor of Education</a></li>
+                        <li><a href="#">Child development</a></li>
+                        <li><a href="#">Art</a></li>
+                    </ul>    
+                </div>
+            </li>
+            <li><a href="Interests">Interests<i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu3 .Subsmenu">
+                    <ul>
+                        <li><a href="#">Fiction</a></li>
+                        <li><a href="#">
+                            Mystery</a></li>
+                        <li><a href="#">Historical Fiction</a></li>
+                        <li><a href="#">Graphic novel</a></li>
+                        <li><a href="#">Memoir</a></li>
+                        <li><a href="#">Autobiography</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Science fiction</a></li>
+                        <li><a href="#">Thriller</a></li>
+                        <li><a href="#">Literary fiction</a></li>
+                        <li><a href="#">Action fiction</a></li>
+                    </ul>    
+                </div>
+            </li>
+        </ul>
+    </div>
+    
+</nav>
+
+
+
+
+
+<section class="three">
+
+    <nav class="thirdnav">
+        <div class="thirdleft">
+            <a href="New Arrivals">New Arrivals</a>
+        </div>
+        <div class="thirdright">
+            <button class="btnthird"><a href="viewall.html" >View All</a></button>
+        </div>
+    </nav>
+   <section class="feature">
+    <div class="firstbox slide" onclick="window.location.href='sproduct.html'">
+        <img src="Img/book1.jpeg.webp" alt="1st book">
+        <h5>Software Engineering</h5>
+    </div>
+    <div class="secbox slide" onclick="window.location.href='sproduct.html'">
+        <img src="Img/book2.jpg" alt="2nd book">
+        <h5>Medical Surgical</h5>
+    </div>
+    <div class="thirbox slide" onclick="window.location.href='sproduct.html'">
+        <img src="Img/book3.jpg" alt="3rd book">
+        <h5>Dune</h5>
+    </div>
+    <div class="fourbox slide" onclick="window.location.href='sproduct.html'">
+        <img src="Img/img3.1.jpg" alt="4th book">
+        <h5>Jack Knifed</h5>
+    </div>
+    <div class="fivbox slide" onclick="window.location.href='sproduct.html'">
+        <img src="Img/book5.1.jpeg" alt="5th book">
+        <h5>Love My Life</h5>
+</div>
+
+   </section>
+</section>
+
+
+
+<!-----------------------------------------#BestSeller------------------------------------------------>
+
+
+
+
+
+
+<section class="BestSeller" id="Best-Sellers">
+
+    <nav class="Bestnav">
+        <div class="Bestleft">
+            <a href="Best Sellers">Best Sellers</a>
+        </div>
+        <div class="Bestright">
+            <button class="btnBest"><a href="viewall.html" >View All</a></button>
+        </div>
+    </nav>
+   <section class="BestSec">
+    <div class="Best Best1" onclick="window.location.href='sproduct.html'">
+        <img src="img/Best1.jpg" alt="1st book">
+        <h5>Software Engineering</h5>
+    </div>
+    <div class="Best Best2" onclick="window.location.href='sproduct.html'">
+        <img src="img/Best2.jpg" alt="2nd book">
+        <h5>Medical Surgical</h5>
+    </div>
+    <div class="Best Best3" onclick="window.location.href='sproduct.html'">
+        <img src="img/Best3.jpg" alt="3rd book">
+        <h5>Dune</h5>
+    </div>
+    <div class="Best Best4" onclick="window.location.href='sproduct.html'">
+        <img src="Img/Best4.jpg" alt="4th book">
+        <h5>Jack Knifed</h5>
+    </div>
+    <div class="Best Best5">
+        <img src="img/Best5.webp" alt="5th book">
+        <h5>Love My Life</h5>
+</div>
+
+   </section>
+</section>
+
+<!-------------------------------------------Overview------------------------------------------------->
+
+
+
+
+   <section  id="Overviw-Section">
+    <div class="ovoverlay">
+        <h1>Overview</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis beatae labore suscipit, vel sequi distinctio impedit voluptate inventore iure ducimus deleniti cumque, nesciunt amet possimus. Facilis laboriosam inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium, fugiat rerum perspiciatis facere quo, possimus laboriosam aperiam voluptate adipisci ad explicabo facilis cupiditate sequi iusto maiores voluptatem, sapiente soluta.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis beatae labore suscipit, vel sequi distinctio impedit voluptate inventore iure ducimus deleniti cumque, nesciunt amet possimus. Facilis laboriosam inventore sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia praesentium, fugiat rerum perspiciatis facere quo, possimus laboriosam aperiam voluptate adipisci ad explicabo facilis cupiditate sequi iusto maiores voluptatem, sapiente soluta.
+            
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel culpa perferendis dolorem autem adipisci, iusto assumenda consequatur, dicta ex labore aliquam ratione, laboriosam illo tenetur recusandae nobis ad inventore?</p>
+
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel culpa perferendis dolorem autem adipisci.</p>
+        
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------Fifth NavBar--------------------------------->
+
+<nav class="fifthnav" id="Deals-Section">
+    <div class="fifthleft">
+        <a href="Dealsfortheweek">Deals for the Week</a>
+    </div>
+    <div class="fifthright">
+        <button class="btnfifth"><a href="viewall.html" >View All</a></button>
+    </div>
+</nav>
+<section class="Weeks">
+    <div class="fstbox">
+        <img src="img/clock.png" alt="clock">
+        <p class="date2">4 days, 19:21:20</p>
+        <p class="para1">Deals for the Week</p>
+        <p class="para2">Here are some of our handpicked titles offered at a special price for a limited period. Hurry the deals run out soon.</p>
+    </div>
+    <div class="collection">
+        <div class="coll1 coll" onclick="window.location.href='sproduct.html'">
+            <img src="Img/collection1.jpg" alt="1st-book">
+            <h5>The Past is Rising  </h5>
+        </div>
+        <div class="coll2 coll" onclick="window.location.href='sproduct.html'">
+            <img src="Img/collection2.avif" alt="2nd-book">
+            <h5>Red Planet</h5>
+        </div>
+        <div class="coll3 coll" onclick="window.location.href='sproduct.html'">
+            <img src="Img/collection3.avif" alt="3rd-book">
+            <h5>Dangerous Temptations</h5>
+        </div>
+        <div class="coll4 coll" onclick="window.location.href='sproduct.html'">
+            <img src="Img/collection4.jpg" alt="4th-book">
+            <h5>Room 321</h5>
+        </div>
+    </div>
+
+
+</section>
+
+
+    
+
+<!-------------------------------------------About Authors------------------------------------------------->
+
+
+<section class="Authors-section" id="Authors-section">
+    <div><h1>Famous Authors</h1></div>
+<section class="section">
+    
+    <div class="paras">
+    <p class="sectionTag headingp" >J. K. Rowling</p>
+    <p class="sectionSubTag textp">Joanne Rowling CH OBE FRSL (/ˈroʊlɪŋ/ "rolling";[1] born 31 July 1965), best known by her pen name J. K. Rowling, is a British author and philanthropist. She wrote Harry Potter, a seven-volume children's fantasy series published from 1997 to 2007. The series has sold over 600 million copies, been translated into 84 languages, and spawned a global media franchise including films and video games. The Casual Vacancy (2012) was her first novel for adults. She writes Cormoran Strike, an ongoing crime fiction series, under the alias Robert Galbraith.</p></div>
+    <div class="thumbnail">
+        <img src="img/JK ROWLING TRANSPHOBIA 130423 default-GettyImages-1188056147.webp" alt="img">
+    </div>
+</section>
+
+
+
+
+<section class="section-left">
+    
+    <div class="paras">
+    <p class="sectionTag headingp" >Stephenie Meyer </p>
+    <p class="sectionSubTag textp">Stephenie Meyer (/ˈmaɪ.ər/; née Morgan; born December 24, 1973) is an American novelist and film producer. She is best known for writing the vampire romance series Twilight, which has sold over 160 million copies, with translations into 37 different languages. Meyer was the bestselling author of 2008 and 2009 in the U.S., having sold over 29 million books in 2008[1] and 26.5 million in 2009.[2] Meyer received the 2009 Children's Book of the Year award from the British Book Awards for Breaking Dawn, the Twilight series finale.</p></div>
+    <div class="thumbnail">
+        <img src="img/stephenie-meyer.webp" alt="img">
+    </div>
+</section>
+
+
+
+<section class="section">
+    
+    <div class="paras">
+    <p class="sectionTag headingp" >Paulo Coelho </p>
+    <p class="sectionSubTag textp">Paulo Coelho was born in Rio de Janeiro, Brazil, and attended a Jesuit school. At 17, Coelho's parents committed him to a mental institution from which he escaped three times before being released at the age of 20.[3][4] Coelho later remarked that "It wasn't that they wanted to hurt me, but they didn't know what to do... They did not do that to destroy me, they did that to save me."[5] At his parents' wishes, Coelho enrolled in law school and abandoned his dream of becoming a writer. One year later, he dropped out and lived life as a hippie, traveling through South America, North Africa, Mexico, and Europe and started using drugs in the 1960s.[6][7]</p></div>
+    <div class="thumbnail">
+        <img src="img/paulo-coelho-3.webp" alt="img">
+    </div>
+    
+</section>
+
+<div class="More">
+    <p><a href="#">...View More...</a></p>
+</div>
+</section>
+
+<section class="price" id="Price-section">
+    <div><h1>Our Pricing Plans</h1></div>
+    <div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet iusto repellendus unde maiores consectetur hic eaque.</p></div>
+    <section class="plans">
+        <div class="standard offer">
+            <p class="main">STANDARD PLAN</p>
+            <h1>$ 15</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button><h3>Buy Now</h3></button>
+        </div>
+        <div class="professional offer">
+            <p class="main">PROFESSIONAL PLAN</p>
+            <h1>$ 25</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button><h3>Buy Now</h3></button>
+        </div>
+        <div class="exclusive offer">
+            <p class="main">EXCLUSIVE PLAN</p>
+            <h1>$ 45</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button><h3>Buy Now</h3></button>
+        </div>
+
+    </section>
+</section>
+
+
+<!-------------------------------------------------CONTACT US----------------------------------------------->
+
+
+
+<section class="contact" id="Contacts-section">
+    <h1>Contact Us</h1>
+    <div class="form">
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your name">
+        <input class="form-input"  type="text" name="Phone" id="Phone" placeholder="Enter Your Phone">
+        <input class="form-input"  type="text" name="Email" id="Email" placeholder="Enter Your email">
+        <textarea class="form-input"  name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your cocern"></textarea>
+        <button class="btn-dark btn-sm">Submit</button>
+    </div>
+</section>
+
+
+
+<!-------------------------------------------------Footer Section----------------------------------------------->
+
+
+<footer class="f1">
+    <div class="sec1 sec">
+        <img class="footerlogo" src="img/myLogo.png" alt="logo">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Lorem ipsum dolllat et!</p>
+        <p><strong>Phone:</strong> +91-9888888900</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="sec2 sec">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="sec3 sec">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="sec4 sec">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+           <img src="img/both.jpg" alt="img">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img class="secured" src="img/Secured.jpg" alt="img">
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+   
+</body>
+</html>

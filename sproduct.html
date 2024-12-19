@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sproduct</title>
+    <link rel="stylesheet" href="css/sproduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body class="body
+">
+    
+ 
+<nav class="navbar h-nav">
+
+    <div class="leftnav">
+        <div class="logo"><img src="img/myLogo.png" alt="logo"></div>
+        <h2>Rent Book Today</h2>
+    </div>
+    <input type="checkbox" name="" id="responsive_menu">
+    <label id="navbarlabel" for="responsive_menu"></label>
+   
+        <ul class="rightul  rightnav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li class="Overview"><a href="#Overviw-Section">Overview</a></li>
+            <li class="Authors"><a href="#Authors-section">Authors</a></li>
+            <li class="Price"><a href="#Price-section">Price</a></li>
+            <li class="Contacts"><a href="#Contacts-section">Contacts</a></li>
+            <li class="cart"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="profile" id="show-login"><a  class="active" href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+            <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass icon"></i></a><input class="input" type="text" placeholder="Search" id="mySearch"></li>
+            
+            
+        </ul>
+</nav>
+<script>
+     const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+    icon.onclick = function(){
+        search.classList.toggle('active')
+    }
+
+</script>
+
+
+
+
+<section id="prodetails">
+    <div class="single-pro-img">
+        <div class="brd">
+            <img src="img/Best4.jpg" id="MainImg" alt="img">
+        </div>
+        <div class="small-img-grp">
+            <div class="small-img-col"><img src="img/Best4.jpg" class="small-img" alt="img"></div>
+            <div class="small-img-col"><img src="img/sm2.jpg" class="small-img"  alt="img"></div>
+            <div class="small-img-col"><img src="img/sm3.webp" class="small-img"  alt="img"></div>
+        </div>
+    </div>
+
+    <div class="single-pro-details">
+        <h3>Louise Penny</h3>
+        <h5>A Great Reckoning</h5>
+        <h2>$ 119.01</h2>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <select>
+            <option>PDF</option>
+            <option>E-Book</option>
+            <option>Hard Copy</option>
+            <input type="number" value="1">
+            <button>Add to Cart</button>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, delectus? Accusamus aperiam hic atque ut ratione ipsum ea delectus, corporis quisquam rem sit repellat tenetur eaque temporibus quos, nihil quo! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At ratione impedit, et dolor aspernatur in? Voluptate laudantium, deserunt nihil, delectus ex illum iusto numquam rem reiciendis fugiat mollitia tempore repellendus! lorem</p>
+        </select>
+        <table class="rating">
+
+            <thead>
+                <td>
+                Customer ratings by feature
+            </td>
+            </thead>
+        
+        <tbody>
+            <tr>
+                <td>Charging power:</td>
+                <td>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Durability:</td>
+                <td>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </td>
+            </tr>
+            <tr>
+                <td>Customer Reviews:</td>
+                <td>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="three">
+
+    <nav class="thirdnav">
+        <div class="thirdleft">
+            <a href="New Arrivals">Featured Products</a>
+        </div>
+        <div class="thirdright">
+            <button class="btnthird">View All</button>
+        </div>
+    </nav>
+   <section class="feature">
+    <div class="firstbox slide">
+        <img src="Img/book1.jpeg.webp" alt="1st book">
+        <h5>Software Engineering</h5>
+    </div>
+    <div class="secbox slide">
+        <img src="Img/book2.jpg" alt="2nd book">
+        <h5>Medical Surgical</h5>
+    </div>
+    <div class="thirbox slide">
+        <img src="Img/book3.jpg" alt="3rd book">
+        <h5>Dune</h5>
+    </div>
+    <div class="fourbox slide">
+        <img src="Img/img3.1.jpg" alt="4th book">
+        <h5>Jack Knifed</h5>
+    </div>
+    <div class="fivbox slide">
+        <img src="Img/book5.1.jpeg" alt="5th book">
+        <h5>Love My Life</h5>
+</div>
+
+   </section>
+</section>
+<!-------------------------------------------------Footer Section----------------------------------------------->
+
+
+<footer class="f1">
+    <div class="sec1 sec">
+        <img class="footerlogo" src="img/myLogo.png" alt="logo">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Lorem ipsum dolllat et!</p>
+        <p><strong>Phone:</strong> +91-9888888900</p>
+        <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+    <div class="sec2 sec">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+    </div>
+    <div class="sec3 sec">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+    </div>
+    <div class="sec4 sec">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+           <img src="img/both.jpg" alt="img">
+        </div>
+        <p>Secured Payment Gateways</p>
+        <img class="secured" src="img/Secured.jpg" alt="img">
+    </div>
+    <div class="copyright">
+        <p></p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+<script>
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementByClassName("small-img");
+
+    smallimg[0].onclick = function(){
+        MainImg.src = smallimg[0].src;
+    }
+    smallimg[1].onclick=function(){
+        MainImg.src = smallimg[1].src;
+    }
+    smallimg[2].onclick=function(){
+        MainImg .src = smallimg[2].src;
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

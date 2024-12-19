@@ -1,0 +1,682 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Ubuntu&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins";
+}
+
+html{
+    scroll-behavior: smooth;
+    transition: all 1s;
+}
+
+.navbar{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    height: 78px;
+    position: sticky;
+}
+
+#responsive_menu{
+    display: none;
+}
+
+.leftnav{
+    background: rgb(0, 0, 0);
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.leftnav h2{
+    color: white;
+}
+.logo img{
+    width: 60px;
+    margin-right: 13px;
+    margin-top: 5px;
+
+}
+.rightnav{
+    display: flex;
+    width: 65%;
+    background-color: #7000ff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+
+}
+.rightul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.rightul li{
+   list-style: none;
+   padding: 15px 21px;
+   position: relative;
+}
+.rightul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    
+}
+
+.rightul li a:hover{
+    text-decoration: none;
+    color: #2ecc71;
+    
+}
+
+.rightul li a.active{
+    color: #2ecc71;
+}
+
+
+.rightul li a.active::after,
+.rightul li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 3px;
+    background: #2ecc71;
+    position: absolute;
+    bottom: 12px;
+    left: 26px;
+}
+
+.cart i{
+    font-size: 20px;
+}
+
+.profile i{
+    font-size: 20px;
+}
+
+.search i{
+    color: black;
+    font-size: 20px;
+}
+
+.search i:hover{
+    color: white;
+}
+
+.search{
+    position: relative;
+    width: 9px;
+    height: 23px;
+    background: white;
+    border-radius: 60px;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+.search:hover{
+    background: black;
+}
+
+.search.active
+{
+   width: 192px;
+   background: white;
+}
+
+.search.active i{
+    color: black;
+}
+
+.search .input{
+    position: absolute;
+    width: 142px;
+    height: 41px;
+    left: 62px;
+    padding: 5px 7px 3px 0px;
+}
+
+.search input{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+
+}
+
+.clear{
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear::before{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+
+}
+
+
+.clear::after{
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 88px;
+    top: 50px;
+
+}
+
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    float: left;
+    margin-bottom: 8px;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(45deg, #131086, #b621f3);
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+.container {
+    min-height: calc(100vh - 40px * 2);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    background: white;
+    justify-content: center;
+}
+.login-right{
+    display: flex;
+    justify-content: center;
+}
+
+.login-right img{
+    width: 717px;
+}
+
+.login-header{
+    width: 450px;
+    margin-bottom: 50px;
+
+    
+}
+
+.login-header h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.login-header p{
+    opacity: .7;
+}
+   
+
+.form-items label:not(.checkboxLabel){
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+   
+   
+}
+
+.navbar input, label {
+    display: block;
+}
+
+.check-box p{
+    display: none;
+}
+
+.form-items {
+    margin-bottom: 23px;
+}
+
+input[type='text'],
+input[type='password']{
+    border: 1px solid black;
+    height: 55px;
+    padding:0 2rem ;
+    width: 411px;
+    outline: none;
+    transition: background .5s;
+    font-size: 18px;
+    border-radius: 100px;
+}
+
+.check-box{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 23px;
+    margin-top: 23px;
+}
+
+.form-button{
+    width: 476px;
+    height: 55px;
+    background: linear-gradient(45deg, #131086, #b621f3);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 23px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.login-form-footer{
+    display: flex;
+    width: 476px;
+    gap: 23px;
+}
+.login-form-footer a{
+
+    flex: 6;
+    gap: 15px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: .6rem;
+    justify-content: center;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    width: 188px;
+    padding: 14px 19px;
+}
+
+.login-form-footer a:hover{
+    background-color: #eee;
+}
+
+@media (max-width:1393px ){
+
+    .login-left{
+        padding: 50px !important;
+    }
+
+    .login-form-footer{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .login-right img{
+        width: 658px;
+    }
+   
+}
+@media (max-width:1222px) {
+    .login-right img{
+        width: 574px;
+    }
+}
+@media(max-width:1168px){
+    body{
+        padding: 20px;
+
+    }
+    .container{
+        grid-template-columns: auto;
+    }
+
+    .login-right{
+        display: none;
+    }
+
+    .login-left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 150px;
+        background: white;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .login-form-footer{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+    }
+}
+
+@media(max-width:602px){
+
+
+.container{
+    justify-content: center;
+}
+.login-header{
+    
+    margin-bottom: 50px;
+}
+
+.login-header p{
+    font-size: 16px;
+}
+
+.login-header h1{
+    font-size: 32px;
+
+}
+
+input[type='text'],
+input[type='password']{
+    height: 49px;
+    padding: 0 2rem;
+    width: 275px;
+}
+
+.check-box{
+    
+    justify-content: center;
+}
+
+.form-button{
+    width: 252px;
+    height: 46px;
+
+    font-size: 14px;
+}
+
+
+.login-form-footer a {
+    width: 171px;
+    font-size: 16px;
+
+}
+.login-form-footer {
+    flex-direction: row;
+}
+.login-left{
+    width: 426px;
+    border-radius: 10px;
+}
+
+.container{
+    
+    margin: auto;
+}
+
+}
+
+@media(max-width:529px){
+    .login-form-footer {
+        flex-direction: column;
+    }
+
+    .login-header h1{
+        font-size: 21px;
+    
+    }
+
+    .login-header p{
+        font-size: 12px;
+    }
+
+    input[type='text'],
+input[type='password']{
+    height: 49px;
+    padding: 0 2rem;
+    width: 190px;
+}
+}
+
+
+
+/*------------===================Responsiveness======================-------------------*/
+
+@media only screen and (max-width:1301px){
+
+    .leftnav{
+        width: 100%;
+    }
+
+    .navbar{
+        height: 138px;
+    }
+
+    .logo{
+        width: auto;
+    }
+
+    #navbarlabel{
+        display: block;
+        background-color: #7000ff;
+    }
+
+    #formlabel{
+        display:none;
+    }
+
+    .check-box p{
+        display: block;
+    }
+
+
+    label::before{
+        content: "\2261";
+        font-size: 44px;
+        margin-left: 23px;
+        margin-bottom: 53px;
+        color: white;
+    }
+
+    .Authors-section h1{
+        margin-bottom: 64px;
+    }
+
+    .section{
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+    }
+
+    .section-left{
+        flex-direction: column-reverse;
+        margin-bottom: 64px;
+    }
+
+    .ovoverlay {
+        font-size: 16px;
+    }
+
+    .navbar .rightul{
+        width: 352px;
+    }
+
+    .feature {
+        flex-wrap: wrap;
+        margin-left: 140px;
+        margin-right: 140px;
+        justify-content: center;
+    }
+
+    .feature .slide{
+        margin: 31px 28px;
+    }
+
+    .BestSec{
+        flex-wrap: wrap;
+        margin-left: 140px;
+        margin-right: 140px;
+        justify-content: center;
+        
+    }
+
+    .Best{
+        margin: 31px 28px;
+       
+    }
+
+    .collection{
+        flex-wrap: wrap;
+        margin-left: 13px;
+        margin-right: 13px;
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
+    .coll{
+        margin: 31px 28px;
+    }
+
+    .plans{
+        flex-wrap: wrap;
+    }
+
+    .offer{
+        margin-top: 40px;
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        padding: 10px 18px;
+    }
+
+
+
+input:checked + label::before{
+    content: "\00d7";
+}
+
+    .rightul{
+
+
+    position: absolute;
+    width: 100%;
+    top: 130px;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: calc(100vh - 58px);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0.6s ease;
+    }
+
+    input:checked ~ .rightul{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        height: 400px;
+    }
+
+
+
+
+    .secondul{
+        font-size: 12px;
+        padding: 24px 0px 0px 27px;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .secondul{
+        font-size: 9px;
+        padding: 22px 0px 0px 3px;
+    }
+    .secondul li{
+        padding: 1px 5px;
+    }
+
+    .ovoverlay {
+        font-size: 12px;
+    }
+
+    .Weeks{
+        margin: auto;
+    }
+
+    .plans{
+        width: auto;
+    }
+
+    .btnthird{
+        padding: 3px 1px;
+    }
+
+    .btnBest{
+        padding: 3px 1px;
+    }
+
+    .btnfifth{
+        padding: 3px 1px;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    .secondul{
+        font-size: 6px;
+    }
+    .secondul li{
+        padding: 1px 1px;
+    }
+
+    .ovoverlay {
+        font-size: 12px;
+    }
+
+    .thumbnail img{
+        width: 236px;
+        margin-bottom: 23px;
+    }
+
+    .headingp {
+        margin-bottom: 14px;
+    }
+
+    .navbar .rightul{
+        width: 159px;
+    }
+
+}
